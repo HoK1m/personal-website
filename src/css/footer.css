@@ -1,0 +1,232 @@
+@media screen and (max-width: 1200px) {
+
+  footer {
+    margin: auto;
+    width: 95%;
+  }
+  
+  .foot-container {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0 1.15rem;
+  }
+  
+  .containers {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .brand {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .logotype {
+    fill: #282828;
+  }
+  .logotype1 {
+    fill: #f1f1f1;
+  }
+  
+  .designs {
+    margin-top: 0.1rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+    font-family: TTNorms;
+    font-size: 1.54rem;
+    text-decoration: none;
+    color: #282828;
+  }
+  .designs1 {
+    margin-top: 0.1rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+    font-family: TTNorms;
+    font-size: 1.54rem;
+    text-decoration: none;
+    color: #f1f1f1;
+  }
+  
+  .slogan {
+    margin-top: 0.55rem;
+  }
+  
+  .sloganWord {
+    all: unset;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.87rem;
+    color: #282828;
+  }
+  .sloganWord1 {
+    all: unset;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.87rem;
+    color: #f1f1f1;
+  }
+  
+  .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  .footericon {
+    margin-right: 2rem;
+  }
+  .footericon:last-child {
+    margin-right: 0;
+  }
+  
+  .social {
+    fill: #282828;
+  }
+  .social1 {
+    fill: #f1f1f1;
+  }
+  .social:hover,
+  .social1:hover {
+    fill: #fa7268;
+  }
+  
+  .text {
+    margin-top: 0.65rem;
+  }
+  
+  .copyright {
+    all: unset;
+    font-weight: 400;
+    font-size: 0.75rem;
+    float: right;
+    text-align: right;
+    color: #444444;
+  }
+  .copyright1 {
+    all: unset;
+    font-weight: 400;
+    font-size: 0.75rem;
+    float: right;
+    text-align: right;
+    color: #bbbbbb;
+  }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+  footer {
+    margin: auto;
+    width: 1152px;
+  }
+  
+  .foot-container {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0 1.15rem;
+  }
+  
+  .containers {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .brand {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .logotype {
+    fill: #282828;
+  }
+  .logotype1 {
+    fill: #f1f1f1;
+  }
+  
+  .designs {
+    margin-top: 0.1rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+    font-family: TTNorms;
+    font-size: 1.54rem;
+    text-decoration: none;
+    color: #282828;
+  }
+  .designs1 {
+    margin-top: 0.1rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+    font-family: TTNorms;
+    font-size: 1.54rem;
+    text-decoration: none;
+    color: #f1f1f1;
+  }
+  
+  .slogan {
+    margin-top: 0.55rem;
+  }
+  
+  .sloganWord {
+    all: unset;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.87rem;
+    color: #282828;
+  }
+  .sloganWord1 {
+    all: unset;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.87rem;
+    color: #f1f1f1;
+  }
+  
+  .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  .footericon {
+    margin-right: 2rem;
+  }
+  .footericon:last-child {
+    margin-right: 0;
+  }
+  
+  .social {
+    fill: #282828;
+  }
+  .social1 {
+    fill: #f1f1f1;
+  }
+  .social:hover,
+  .social1:hover {
+    fill: #fa7268;
+  }
+  
+  .text {
+    margin-top: 0.65rem;
+  }
+  
+  .copyright {
+    all: unset;
+    font-weight: 400;
+    font-size: 0.75rem;
+    float: right;
+    text-align: right;
+    color: #444444;
+  }
+  .copyright1 {
+    all: unset;
+    font-weight: 400;
+    font-size: 0.75rem;
+    float: right;
+    text-align: right;
+    color: #bbbbbb;
+  }
+
+}

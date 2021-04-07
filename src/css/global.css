@@ -1,0 +1,81 @@
+html {
+  display: flex;
+  font: 112.5%/1.45em "Raleway", "Open Sans", sans-serif;
+}
+
+body {
+  all: unset;
+  display: flex;
+  width: 100%;
+  font-family: "Raleway", "Open Sans", sans-serif;
+}
+
+#___gatsby,
+#gatsby-focus-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+@media screen and (max-width: 1344px) {
+  main {
+    margin: auto;
+    flex: 1 0 auto;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  main {
+    margin: auto;
+    flex: 1 0 auto;
+    width: 1344px;
+  }
+}
+
+b,
+strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+h1 {
+  font-family: "Raleway", "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-family: "Raleway", "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.62671rem;
+}
+
+h3 {
+  font-family: "Raleway", "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.38316rem;
+}
+
+h4 {
+  font-family: "Raleway", "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+h5 {
+  font-family: "Raleway", "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.85028rem;
+}
+
+h6 {
+  font-family: "Raleway", "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.78405rem;
+}
+
+p {
+  font-family: "Raleway", "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}

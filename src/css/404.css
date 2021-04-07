@@ -1,0 +1,26 @@
+.content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 300%;
+}
+
+.darktext {
+  color: #f1f1f1;
+}
+
+.button {
+  margin-top: 100px;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  color: #ffee8a;
+  background-color: #fa7268;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 2px 2px 10px #525252;
+}
+.button:hover {
+  background-color: #dd6a6a;
+  color: #ffee8a;
+}

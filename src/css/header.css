@@ -1,0 +1,231 @@
+@media screen and (max-width: 1152px) {
+  .header {
+    position: sticky;
+    padding: auto;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(241, 241, 241, 0.96);
+  }
+  .header1 {
+    position: sticky;
+    padding: auto;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(40, 40, 40, 0.96);
+  }
+  .header2 {
+    position: sticky;
+    padding: auto;
+    top: 0;
+    z-index: 100;
+    background-color: #000;
+  }
+  
+  .head-container {
+    width: 100%;
+    height: 5.5rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .leftnav,
+  .rightnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    margin-top: 0.5rem;
+  }
+  
+  .centernav {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .navbutton {
+    all: unset;
+    margin: auto;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #282828;
+  }
+  .navbutton1 {
+    all: unset;
+    margin: auto;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #f1f1f1;
+  }
+  .navbutton2 {
+    all: unset;
+    margin: auto;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+  }
+  .navbutton:hover,
+  .navbutton1:hover,
+  .navbutton2:hover {
+    color: #fa7268;
+    cursor: pointer;
+  }
+  
+  .activebutton {
+    all: unset;
+    margin: auto;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #282828;
+  }
+  .activebutton1 {
+    all: unset;
+    margin: auto;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #f1f1f1;
+  }
+  .activebutton2 {
+    all: unset;
+    margin: auto;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+  }
+  
+  .icon {
+    fill: #282828;
+  }
+  .icon1 {
+    fill: #f1f1f1;
+  }
+  .icon2 {
+    fill: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1152px) {
+
+  .header {
+    position: sticky;
+    padding: auto;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(241, 241, 241, 0.96);
+  }
+  .header1 {
+    position: sticky;
+    padding: auto;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(40, 40, 40, 0.96);
+  }
+  .header2 {
+    position: sticky;
+    padding: auto;
+    top: 0;
+    z-index: 100;
+    background-color: #000;
+  }
+  
+  .head-container {
+    width: 1152px;
+    height: 5.5rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .leftnav,
+  .rightnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    margin-top: 0.5rem;
+  }
+  
+  .centernav {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .navbutton {
+    all: unset;
+    margin: auto;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #282828;
+  }
+  .navbutton1 {
+    all: unset;
+    margin: auto;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #f1f1f1;
+  }
+  .navbutton2 {
+    all: unset;
+    margin: auto;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+  }
+  .navbutton:hover,
+  .navbutton1:hover,
+  .navbutton2:hover {
+    color: #fa7268;
+    cursor: pointer;
+  }
+  
+  .activebutton {
+    all: unset;
+    margin: auto;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #282828;
+  }
+  .activebutton1 {
+    all: unset;
+    margin: auto;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #f1f1f1;
+  }
+  .activebutton2 {
+    all: unset;
+    margin: auto;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+  }
+  
+  .icon {
+    fill: #282828;
+  }
+  .icon1 {
+    fill: #f1f1f1;
+  }
+  .icon2 {
+    fill: #ffffff;
+  }
+
+}
