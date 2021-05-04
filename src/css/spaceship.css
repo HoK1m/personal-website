@@ -1,0 +1,23 @@
+.ss-navbutton {
+    all: unset;
+    text-align: center;
+    width: auto;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.95rem;
+}.ss-navSelected {
+    color: #fa7268;
+}
+
+.ss-section {
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+  .ss-section h1{
+      margin-bottom: 3.5rem;
+  }
+  .ss-projImage {
+      margin-bottom: 4rem;
+}

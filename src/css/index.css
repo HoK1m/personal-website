@@ -307,39 +307,3 @@
       .button1:hover {
           background-color: #fa7268;
 }
-
-
-.ho-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #273646;
-  width: 100%;
-  padding: 2em 0;
-}
-  .ho-footerSocialBar {
-    display: flex;
-    flex-direction: row;
-  }
-  .ho-logoBox {
-    background: #3a4a5c;
-    cursor: pointer;
-    font-size: 18pt;
-    height: 60px;
-    margin: 0 15px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
-    width: 60px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .ho-social {
-    fill: #fff;
-  }
-  .ho-social:hover {
-    fill: #04c2c9;
-  }

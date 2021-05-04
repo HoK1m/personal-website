@@ -1,232 +1,70 @@
-@media screen and (max-width: 1200px) {
-
-  footer {
-    margin: auto;
-    width: 95%;
-  }
-  
-  .foot-container {
+.ho-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #273646;
+  width: 100%;
+  padding: 2em 0;
+}
+  .ho-footerSocialBar {
     display: flex;
     flex-direction: row;
-    margin: 2rem 0 1.15rem;
   }
-  
-  .containers {
-    width: 50%;
+  .ho-logoBox {
+    background: #3a4a5c;
+    cursor: pointer;
+    font-size: 18pt;
+    height: 60px;
+    margin: 0 15px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+    width: 60px;
+    align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
-  
-  .brand {
-    display: flex;
-    flex-direction: row;
+  .ho-social {
+    fill: #fff;
   }
-  
-  .logotype {
-    fill: #282828;
-  }
-  .logotype1 {
-    fill: #f1f1f1;
-  }
-  
-  .designs {
-    margin-top: 0.1rem;
-    margin-left: 0.5rem;
-    margin-bottom: 0;
-    font-family: TTNorms;
-    font-size: 1.54rem;
-    text-decoration: none;
-    color: #282828;
-  }
-  .designs1 {
-    margin-top: 0.1rem;
-    margin-left: 0.5rem;
-    margin-bottom: 0;
-    font-family: TTNorms;
-    font-size: 1.54rem;
-    text-decoration: none;
-    color: #f1f1f1;
-  }
-  
-  .slogan {
-    margin-top: 0.55rem;
-  }
-  
-  .sloganWord {
-    all: unset;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 0.87rem;
-    color: #282828;
-  }
-  .sloganWord1 {
-    all: unset;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 0.87rem;
-    color: #f1f1f1;
-  }
-  
-  .icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-  
-  .footericon {
-    margin-right: 2rem;
-  }
-  .footericon:last-child {
-    margin-right: 0;
-  }
-  
-  .social {
-    fill: #282828;
-  }
-  .social1 {
-    fill: #f1f1f1;
-  }
-  .social:hover,
-  .social1:hover {
-    fill: #fa7268;
-  }
-  
-  .text {
-    margin-top: 0.65rem;
-  }
-  
-  .copyright {
-    all: unset;
-    font-weight: 400;
-    font-size: 0.75rem;
-    float: right;
-    text-align: right;
-    color: #444444;
-  }
-  .copyright1 {
-    all: unset;
-    font-weight: 400;
-    font-size: 0.75rem;
-    float: right;
-    text-align: right;
-    color: #bbbbbb;
+  .ho-social:hover {
+    fill: #04c2c9;
   }
 
-}
 
-
-@media screen and (min-width: 1200px) {
-
-  footer {
-    margin: auto;
-    width: 1152px;
-  }
-  
-  .foot-container {
-    display: flex;
-    flex-direction: row;
-    margin: 2rem 0 1.15rem;
-  }
-  
-  .containers {
-    width: 50%;
+  .ho-footer1 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 2em 0;
   }
-  
-  .brand {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .logotype {
-    fill: #282828;
-  }
-  .logotype1 {
-    fill: #f1f1f1;
-  }
-  
-  .designs {
-    margin-top: 0.1rem;
-    margin-left: 0.5rem;
-    margin-bottom: 0;
-    font-family: TTNorms;
-    font-size: 1.54rem;
-    text-decoration: none;
-    color: #282828;
-  }
-  .designs1 {
-    margin-top: 0.1rem;
-    margin-left: 0.5rem;
-    margin-bottom: 0;
-    font-family: TTNorms;
-    font-size: 1.54rem;
-    text-decoration: none;
-    color: #f1f1f1;
-  }
-  
-  .slogan {
-    margin-top: 0.55rem;
-  }
-  
-  .sloganWord {
-    all: unset;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 0.87rem;
-    color: #282828;
-  }
-  .sloganWord1 {
-    all: unset;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 0.87rem;
-    color: #f1f1f1;
-  }
-  
-  .icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-  
-  .footericon {
-    margin-right: 2rem;
-  }
-  .footericon:last-child {
-    margin-right: 0;
-  }
-  
-  .social {
-    fill: #282828;
-  }
-  .social1 {
-    fill: #f1f1f1;
-  }
-  .social:hover,
-  .social1:hover {
-    fill: #fa7268;
-  }
-  
-  .text {
-    margin-top: 0.65rem;
-  }
-  
-  .copyright {
-    all: unset;
-    font-weight: 400;
-    font-size: 0.75rem;
-    float: right;
-    text-align: right;
-    color: #444444;
-  }
-  .copyright1 {
-    all: unset;
-    font-weight: 400;
-    font-size: 0.75rem;
-    float: right;
-    text-align: right;
-    color: #bbbbbb;
-  }
-
-}
+    .ho-footerSocialBar {
+      display: flex;
+      flex-direction: row;
+    }
+    .ho-logoBox1 {
+      /* background: #3a4a5c; */
+      cursor: pointer;
+      font-size: 18pt;
+      height: 60px;
+      margin: 0 15px;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+      width: 60px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .ho-social1 {
+      fill: #000;
+    }
+    .ho-social1:hover {
+      fill: #fa7268;
+    }
