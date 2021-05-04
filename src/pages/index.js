@@ -29,20 +29,8 @@ const getDimensions = (ele) => {
   };
 };
 
-
-const scrollTo = (ele) => {
-  const headerHeightOffset = -66;
-  const y = ele.getBoundingClientRect().top + window.pageYOffset + headerHeightOffset;
-
-  window.scrollTo({
-    top: y,
-    behavior: "smooth",
-  });
-};
-
 const Howard = () => {
   const [visibleSection, setVisibleSection] = useState();
-
   const landingRef = useRef(null);
   const headerRef = useRef(null);
   const aboutRef = useRef(null);
@@ -58,11 +46,10 @@ const Howard = () => {
     { section: "Contact", ref: contactRef },
   ];
 
-
   useEffect(() => {
     const handleScroll = () => {
       const { height: headerHeight } = getDimensions(headerRef.current);
-      const scrollPosition = window.scrollY + headerHeight;
+      const scrollPosition = window.scrollY + headerHeight + 2;
 
       const selected = sectionRefs.find(({ section, ref }) => {
         const ele = ref.current;
@@ -89,6 +76,18 @@ const Howard = () => {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [visibleSection]);
+
+  const scrollTo = (ele) => {
+    const { height: headerHeight } = getDimensions(headerRef.current);
+    const headerHeightOffset = -Math.abs(headerHeight);
+    const y = ele.getBoundingClientRect().top + window.pageYOffset + headerHeightOffset;
+
+    window.scrollTo({
+      top: y,
+      behavior: "smooth",
+    });
+  };
+
 
   return (
     <div className="howard">

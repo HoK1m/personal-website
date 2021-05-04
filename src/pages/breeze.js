@@ -3,23 +3,29 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import "@fontsource/raleway"
 import "@fontsource/open-sans"
-import "../css/spaceship.css"
+import "../css/breeze.css"
 
 //photos
-import slide from "../images/Spaceship.jpg"
-import storyboard1 from "../images/storyboard1.jpg"
-import storyboard2 from "../images/storyboard2.jpg"
-import storyboard3 from "../images/storyboard3.jpg"
-import prototype1 from "../images/prototype1.jpg"
-import prototype2 from "../images/prototype2.jpg"
-import prototype3 from "../images/prototype3.jpg"
-import wireframe1 from "../images/wireframe1.png"
-import wireframe2 from "../images/wireframe2.png"
-import wireframe3 from "../images/wireframe3.png"
-import final1 from "../images/final-1.png"
-import final2 from "../images/final-2.png"
-import final3 from "../images/final-3.png"
-import final4 from "../images/final-4.png"
+import slide from "../images/Breeze1.png"
+import prototype1 from "../images/sketch1.jpg"
+import prototype2 from "../images/sketch2.jpg"
+import prototype3 from "../images/mockup.png"
+import prototype4 from "../images/mockup1.png"
+import prototype5 from "../images/mockup2.png"
+import prototype6 from "../images/mockup3.png"
+import wireframe1 from "../images/Landing_Page-1.png"
+import wireframe2 from "../images/Landing_Page-2.png"
+import wireframe3 from "../images/Landing_Page-3.png"
+import wireframe4 from "../images/Landing_Page-4.png"
+import wireframe5 from "../images/Landing_Page-5.png"
+import wireframe6 from "../images/Landing_Page-3.png"
+import wireframe7 from "../images/settings1.png"
+import wireframe8 from "../images/settings2.png"
+import wireframe9 from "../images/settings3.png"
+import wireframe10 from "../images/calendar1.png"
+import wireframe11 from "../images/Feed1.png"
+import wireframe12 from "../images/Feed2.png"
+import search from "../images/search.png"
 
 
 const getDimensions = (ele) => {
@@ -34,43 +40,29 @@ const getDimensions = (ele) => {
     };
 };
 
-const scrollTo = (ele) => {
-    const headerHeightOffset = -66;
-    const y = ele.getBoundingClientRect().top + window.pageYOffset + headerHeightOffset;
-
-    window.scrollTo({
-        top: y,
-        behavior: "smooth",
-    });
-};
-
 const Breeze = () => {
-
     const [visibleSection, setVisibleSection] = useState();
-
     const headerRef = useRef(null);
     const backgroundRef = useRef(null);
-    const storyboardRef = useRef(null);
-    const prototypeRef = useRef(null);
-    const wireframeRef = useRef(null);
-    const testRef = useRef(null);
-    const finalRef = useRef(null);
+    const useCaseRef = useRef(null);
+    const groundworkRef = useRef(null);
+    const refineRef = useRef(null);
+    const adjustmentRef = useRef(null);
     const reflectionRef = useRef(null);
 
     const sectionRefs = [
         { section: "Background", ref: backgroundRef },
-        { section: "Storyboarding", ref: storyboardRef },
-        { section: "Prototyping", ref: prototypeRef },
-        { section: "Wireframing", ref: wireframeRef },
-        { section: "Testing", ref: testRef },
-        { section: "Final", ref: finalRef },
+        { section: "Use Cases", ref: useCaseRef },
+        { section: "Groundwork", ref: groundworkRef },
+        { section: "Refining", ref: refineRef },
+        { section: "Adjustments", ref: adjustmentRef },
         { section: "Reflection", ref: reflectionRef },
     ];
 
     useEffect(() => {
         const handleScroll = () => {
             const { height: headerHeight } = getDimensions(headerRef.current);
-            const scrollPosition = window.scrollY + headerHeight;
+            const scrollPosition = window.scrollY + headerHeight + 2;
 
             const selected = sectionRefs.find(({ section, ref }) => {
                 const ele = ref.current;
@@ -98,6 +90,17 @@ const Breeze = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [visibleSection]);
 
+    const scrollTo = (ele) => {
+        const { height: headerHeight } = getDimensions(headerRef.current);
+        const headerHeightOffset = -Math.abs(headerHeight);
+        const y = ele.getBoundingClientRect().top + window.pageYOffset + headerHeightOffset;
+    
+        window.scrollTo({
+            top: y,
+            behavior: "smooth",
+        });
+    };
+
 
     return (
         <Layout seo="Breeze | Howard Kim">
@@ -118,27 +121,27 @@ const Breeze = () => {
                         </li>
                         <li>
                             <button
-                                className={`ss-navbutton ${visibleSection === "Storyboarding" ? "ss-navSelected" : ""}`}
-                                onClick={() => { scrollTo(storyboardRef.current); }}
-                            >Storyboarding</button>
+                                className={`ss-navbutton ${visibleSection === "Use Cases" ? "ss-navSelected" : ""}`}
+                                onClick={() => { scrollTo(useCaseRef.current); }}
+                            >Use Cases</button>
                         </li>
                         <li>
                             <button
-                                className={`ss-navbutton ${visibleSection === "Prototyping" ? "ss-navSelected" : ""}`}
-                                onClick={() => { scrollTo(prototypeRef.current); }}
-                            >Prototyping</button>
+                                className={`ss-navbutton ${visibleSection === "Groundwork" ? "ss-navSelected" : ""}`}
+                                onClick={() => { scrollTo(groundworkRef.current); }}
+                            >Groundwork</button>
                         </li>
                         <li>
                             <button
-                                className={`ss-navbutton ${visibleSection === "Wireframing" ? "ss-navSelected" : ""}`}
-                                onClick={() => { scrollTo(wireframeRef.current); }}
-                            >Wireframing</button>
+                                className={`ss-navbutton ${visibleSection === "Refining" ? "ss-navSelected" : ""}`}
+                                onClick={() => { scrollTo(refineRef.current); }}
+                            >Refining</button>
                         </li>
                         <li>
                             <button
-                                className={`ss-navbutton ${visibleSection === "Testing" ? "ss-navSelected" : ""}`}
-                                onClick={() => { scrollTo(testRef.current); }}
-                            >Testing</button>
+                                className={`ss-navbutton ${visibleSection === "Adjustments" ? "ss-navSelected" : ""}`}
+                                onClick={() => { scrollTo(adjustmentRef.current); }}
+                            >Adjustments</button>
                         </li>
                         <li>
                             <button
@@ -157,44 +160,44 @@ const Breeze = () => {
                 <p></p>
             </section>
 
-            <section className="ss-section" id="Storyboarding" ref={storyboardRef}>
-                <h3>Storyboarding</h3>
-                <img className="ss-projImage" width="100%" height="auto" src={storyboard1} alt="project content" />
-                <img className="ss-projImage" width="100%" height="auto" src={storyboard2} alt="project content" />
-                <img className="ss-projImage" width="100%" height="auto" src={storyboard3} alt="project content" />
+            <section className="ss-section" id="Use Cases" ref={useCaseRef}>
+                <h3>Design Use Cases / User Stories</h3>
             </section>
 
-            <section className="ss-section" id="Prototyping" ref={prototypeRef}>
-                <h3>Prototyping</h3>
+            <section className="ss-section" id="Groundwork" ref={groundworkRef}>
+                <h3>Groundwork</h3>
                 <img className="ss-projImage" width="100%" height="auto" src={prototype1} alt="project content" />
                 <img className="ss-projImage" width="100%" height="auto" src={prototype2} alt="project content" />
                 <img className="ss-projImage" width="100%" height="auto" src={prototype3} alt="project content" />
+                <img className="ss-projImage" width="100%" height="auto" src={prototype4} alt="project content" />
+                <img className="ss-projImage" width="100%" height="auto" src={prototype5} alt="project content" />
+                <img className="ss-projImage" width="100%" height="auto" src={prototype6} alt="project content" />
             </section>
 
-            <section className="ss-section" id="Wireframing" ref={wireframeRef}>
-                <h3>Wireframing</h3>
+            <section className="ss-section" id="Refining" ref={refineRef}>
+                <h3>Refining</h3>
                 <img className="ss-projImage" width="100%" height="auto" src={wireframe1} alt="project content" />
                 <img className="ss-projImage" width="100%" height="auto" src={wireframe2} alt="project content" />
                 <img className="ss-projImage" width="100%" height="auto" src={wireframe3} alt="project content" />
+                <img className="ss-projImage" width="100%" height="auto" src={wireframe4} alt="project content" />
+                <img className="ss-projImage" width="100%" height="auto" src={wireframe5} alt="project content" />
+                <img className="ss-projImage" width="100%" height="auto" src={wireframe6} alt="project content" />
+                <img className="ss-projImage" width="100%" height="auto" src={wireframe7} alt="project content" />
+                <img className="ss-projImage" width="100%" height="auto" src={wireframe8} alt="project content" />
+                <img className="ss-projImage" width="100%" height="auto" src={wireframe9} alt="project content" />
+                <img className="ss-projImage" width="100%" height="auto" src={wireframe10} alt="project content" />
+                <img className="ss-projImage" width="100%" height="auto" src={wireframe11} alt="project content" />
+                <img className="ss-projImage" width="100%" height="auto" src={wireframe12} alt="project content" />
             </section>
 
-            <section className="ss-section" id="Testing" ref={testRef}>
-                <h3>Testing</h3>
+            <section className="ss-section" id="Adjustments" ref={adjustmentRef}>
+                <h3>Adjustments</h3>
+                <img className="ss-projImage" width="100%" height="auto" src={search} alt="project content" />
             </section>
 
             <section className="ss-section" id="Reflection" ref={reflectionRef}>
                 <h3>Reflection</h3>
-                <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
-                    <img className="ss-projImage" width="30%" height="auto" src={final1} alt="project content" />
-                    <img className="ss-projImage" width="30%" height="auto" src={final2} alt="project content" />
-                </div>
-                <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
-                    <img className="ss-projImage" width="30%" height="auto" src={final3} alt="project content" />
-                    <img className="ss-projImage" width="30%" height="auto" src={final4} alt="project content" />
-                </div>
             </section>
-
-
         </Layout >
     )
 }

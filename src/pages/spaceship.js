@@ -34,27 +34,14 @@ const getDimensions = (ele) => {
     };
 };
 
-const scrollTo = (ele) => {
-    const headerHeightOffset = -66;
-    const y = ele.getBoundingClientRect().top + window.pageYOffset + headerHeightOffset;
-
-    window.scrollTo({
-        top: y,
-        behavior: "smooth",
-    });
-};
-
 const SpaceShip = () => {
-
     const [visibleSection, setVisibleSection] = useState();
-
     const headerRef = useRef(null);
     const backgroundRef = useRef(null);
     const storyboardRef = useRef(null);
     const prototypeRef = useRef(null);
     const wireframeRef = useRef(null);
     const testRef = useRef(null);
-    const finalRef = useRef(null);
     const reflectionRef = useRef(null);
 
     const sectionRefs = [
@@ -63,14 +50,13 @@ const SpaceShip = () => {
         { section: "Prototyping", ref: prototypeRef },
         { section: "Wireframing", ref: wireframeRef },
         { section: "Testing", ref: testRef },
-        { section: "Final", ref: finalRef },
         { section: "Reflection", ref: reflectionRef },
     ];
 
     useEffect(() => {
         const handleScroll = () => {
             const { height: headerHeight } = getDimensions(headerRef.current);
-            const scrollPosition = window.scrollY + headerHeight;
+            const scrollPosition = window.scrollY + headerHeight + 2;
 
             const selected = sectionRefs.find(({ section, ref }) => {
                 const ele = ref.current;
@@ -97,6 +83,17 @@ const SpaceShip = () => {
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [visibleSection]);
+
+    const scrollTo = (ele) => {
+        const { height: headerHeight } = getDimensions(headerRef.current);
+        const headerHeightOffset = -Math.abs(headerHeight);
+        const y = ele.getBoundingClientRect().top + window.pageYOffset + headerHeightOffset;
+    
+        window.scrollTo({
+            top: y,
+            behavior: "smooth",
+        });
+    };
 
 
     return (
@@ -193,8 +190,6 @@ const SpaceShip = () => {
                     <img className="ss-projImage" width="30%" height="auto" src={final4} alt="project content" />
                 </div>
             </section>
-
-
         </Layout >
     )
 }
