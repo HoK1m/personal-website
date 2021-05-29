@@ -23,7 +23,10 @@ import wireframe9 from "../images/settings3.png"
 import wireframe10 from "../images/calendar1.png"
 import wireframe11 from "../images/Feed1.png"
 import wireframe12 from "../images/Feed2.png"
+import gantt from "../images/gantt.png"
 import search from "../images/search.png"
+import register from "../images/register.png"
+import logout from "../images/logout.png"
 
 
 const getDimensions = (ele) => {
@@ -167,8 +170,8 @@ const Breeze = () => {
                     the club official website or page on a social media platform were all very much needed.
                 </p>
                 <h2 style={{ fontFamily: "Open Sans" }}>
-                    " Because of the lack of school resources online, students looking for a specific area of interest
-                    or finding information in clubs/organizations of their interests can be difficult. "
+                    Because of the lack of school resources online, students looking for a specific area of interest
+                    or finding information in clubs/organizations of their interests can be difficult.
                 </h2>
             </section>
 
@@ -181,6 +184,12 @@ const Breeze = () => {
                     is needed for each complete idea implemented by the application. Some examples of 'Use Case' includes 
                     the following: Register, Login, Logout, View Page, Create Event, Edit Event, Add Events to Calendar.
                     <br/><br/>
+                </p>
+                <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
+                    <img className="ss-projImage" width="45%" height="auto" src={register} alt="project content" />
+                    <img className="ss-projImage" width="45%" height="auto" src={logout} alt="project content" />
+                </div>
+                <p>
                     In addition, 'User Stories' were used in tandem with 'Use Cases' to design and implement features of 
                     the web platform. Each 'User Story' describes the type of user, what they want and why; basically 
                     describing each 'Use Cases' from an end-user perspective. For Breeze, we divided the 'User Stories' 
@@ -189,14 +198,11 @@ const Breeze = () => {
                     <ul>
                         <li>As a general user, I want to log-in, so that I can be secure and save the preferences linked to my account.</li>
                         <li>As a general user, I want to be able to message administrators, so that I can contact administrators with any inquiry or feedback that I have.</li>
-                        <li>As a general user, I want to be able to delete my account, so that my information will not be saved or viewable if I no longer want to use the site.</li>
                         <br/>
-                        <li>As a student, I want to add my interests to the app and view them in a visually straightforward manner, so that the discovery feed can be personalized and tailored to show me the clubs which match my interests.</li>
                         <li>As a student, I want to subscribe to affiliates so that I can keep up to date with the affiliates that I am interested in and receive their posts in my feed.</li>
                         <li>As a student, I want to be able to search for organizations by name and by tag so that I can find organizations that cater to my interests.</li>
                         <br/>
                         <li>As a campus affiliate, I want to be able to modify the tags of my organization so that students of the app with matching interest will see my organization.</li>
-                        <li>As a campus affiliate, I want to post events to students subscribed to my org, and have those posts show up in their subscription feed, so that our subscribers can stay up-to-date with our events.</li>
                         <li>As a campus affiliate, I want to maintain my affiliate page, so that students can see all my updated information compiled in one place.</li>
                     </ul>
                 </p>
@@ -216,12 +222,6 @@ const Breeze = () => {
                     as one core page of the web platform; as few examples, the 'Landing' page would be considered as one 
                     'feature page' as well as 'Account Settings' page would be considered as one page. <br/>
                     <br/>
-                    During that meeting, we would follow the 'pitch' model; each member would 'pitch' their completed page 
-                    designs. Then once we have majority vote to go-through with the design, we would 'fix-up' the design 
-                    with suggestions provided by the entire team. The suggestions would cover everything from UI/UX and 
-                    finest details or implementation problems that would collide with the development team. In the end, 
-                    I had the final say in all designs as the Design Team Lead. <br/>
-                    <br/>
                     Some people opted to start with sketches, while some jumped straight into Figma wireframe mock-ups. 
                     First few iterations are shown below. <br/><br/>
                 </p>
@@ -234,6 +234,14 @@ const Breeze = () => {
                     <img className="ss-projImage" width="40%" height="auto" src={prototype4} alt="project content" />
                     <img className="ss-projImage" width="40%" height="auto" src={prototype6} alt="project content" />
                 </div>
+                <p>
+                    During the general team meeting, we would follow the 'pitch' model; each member would 'pitch' their 
+                    completed page designs. Then once we have majority vote to go-through with the design, we would 
+                    'fix-up' the design with suggestions provided by the entire team. The suggestions would cover 
+                    everything from UI/UX and finest details or implementation problems that would collide with the 
+                    development team. In the end, I had the final say in all designs as the Design Team Lead. <br/>
+                    <br/>
+                </p>
             </section>
 
             <section className="ss-section" id="Refining" ref={refineRef}>
@@ -296,7 +304,10 @@ const Breeze = () => {
                     responsible for the development/implementation of a feature, it organized the order of features 
                     to be implemented as some features would be pre-requisite of others, and it provided soft and 
                     hard deadlines for the features to make sure the project meets completion on-time. <br/>
-                    <br/>
+                    <br/><br/>
+                </p>
+                <img className="ss-projImage" width="100%" height="auto" src={gantt} alt="project content" />
+                <p>
                     Finally, we made unofficial role changes for the team to maximize efficiency and produce 
                     reasonable & expected results. We decided to pivot the Design team into a team dedicated to working
                     solely on weekly deliverables and documentation. This was decided because the Design team is no 
