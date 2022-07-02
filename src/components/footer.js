@@ -31,7 +31,7 @@ export const FooterDark = () => {
                     </div>
                 </a>
             </div>
-            <h5 style={{ color: "#fa7268" }}>© 2021 Howard Kim</h5>
+            <h5 style={{ color: "#fa7268" }}>© {new Date().getFullYear()} Howard Kim</h5>
         </footer>
     )
 };
@@ -66,7 +66,7 @@ export const FooterLight = () => {
                     </div>
                 </a>
             </div>
-            <h5>© 2021 Howard Kim</h5>
+            <h5>© {new Date().getFullYear()} Howard Kim</h5>
         </footer>
     )
 };
